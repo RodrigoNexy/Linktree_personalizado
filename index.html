@@ -2,135 +2,55 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meios de Contato</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-/* font-family: 'Poppins', sans-serif; */
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    background-color: black;
-    color: white;
-}
-.container{
-    /* border: 2px solid red; */
-    width: 450px;
-    height: 710px;
-    background: linear-gradient(to bottom, rgba(69, 0, 109, 0.603),rgba(110, 0, 169, 0.718),rgba(154, 1, 236, 0.819));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 1rem;
-    margin: 1rem auto;
-    border: 1.5px solid rgba(255, 255, 255, 0.401);
-    padding-top: 2rem;
-}
-::-webkit-scrollbar{
-    display: none;
-}
-.navbar{
-    background-color: rgba(210, 114, 255, 0.694);
-    backdrop-filter: blur(20px);
-    width: 330px;
-    padding: .4rem .4rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 40px;
-    margin-top: -2rem;
-    margin-bottom: 2rem;
-    transition-duration: .2s;
-}
-.navbar:hover{
-    transform: scale(0.97);
-}
-.profile{
-    width: 2.6rem;
-    background: white;
-    border-radius: 50%;
-}
-.menu{
-    filter: invert(1);
-    width: 2rem;
-    margin-right: 1rem;
-}
-.main{
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- END GOOGLE FONTS -->
 
-}
-.items{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: .9rem 2rem;
-    width: 320px;
-    border-radius: 9px;
-    background-color: rgba(255, 255, 255, 0.795);
-    margin: 1rem;
-    transition-duration: .2s;
-    cursor: pointer;
-    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.319);
-}
-.items:hover{
-    transform: scale(0.96);
-    background-color: rgb(255, 255, 255);
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-}
-.icon{
-    width: 2rem;
-}
-.user{
-    color: rgb(61, 61, 61);
-}
-.name{
-    margin-bottom: .5rem;
-    
-}
-.sub{
-    font-family: monospace;
-    color: rgb(186, 186, 186);
-    margin-bottom: 2rem;
-}
-    </style>
+    <title>@meunome</title>
 </head>
 <body>
     <div class="container">
-        <div class="navbar">
-            <img src="./eu.jpg" alt="" class="profile">
-            <img src="./menu-bar.png" alt="" class="menu">
-        </div>
-        <h3 class="name">Rodrigo Carvalho</h3>
-        <p class="sub">Opa!😀 Bem vindo, sou desenvolvedor FrontEnd e WebDesigner.</p>
-        <div class="main">
-            <div class="items">
-                <img src="./whatsapp.png" alt="" class="icon">
-                <p class="user"> +55 48 9 9959-3922<a href="wa.me/5548999593922"></a></p>
-            </div>
-            <div class="items">
-                <img src="./github.png" alt="" class="icon">
-                <p class="user">RodrigoNexy</p>
-            </div>
-            <div class="items">
-                <img src="./linkedin.png" alt="" class="icon">
-                <p class="user">Rodrigo Carvalho</p>
-            </div>
-            <div class="items">
-                <img src="./instagram.png" alt="" class="icon">
-                <p class="user">@RealizeSites</p>
-            </div>
-            <div class="items">
-                <img src="./gmail.png" alt="" class="icon">
-                <p class="user">rodrigogoulart97@gmail.com</p>
-            </div>
-        </div>
-    </div>
+        <header>
+            <img src="images/" alt="Minha foto do perfil">
+            <h1>@meunome</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ducimus dolores hic. Iste dolore, temporibus alias sequi delectus illum.</p>
+        </header>
+
+        <section class="botoes-links">
+            <a href="#" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Link 1</span>
+                    <i class="bi bi-toggle-on"></i>
+                </button>
+            </a>
+
+            <a href="#" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Link 2</span>
+                    <i class="bi bi-code-slash"></i>
+                </button >
+            </a>
+
+            <a href="#" target="_blank" class="link">
+                <button class="degrade">
+                    <span>Link 3</span>
+                    <i class="bi bi-facebook"></i>
+                </button>
+            </a>
+        </section><!--botoes-links-->
+
+        <footer>
+            <a href="#" class="btn-footer degrade" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+            <a href="" class="btn-footer degrade" target="_blank"><i class="bi bi-github"></i></a>
+        </footer>
+    </div><!--container-->
 </body>
 </html>
